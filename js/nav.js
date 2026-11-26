@@ -73,7 +73,7 @@
     d.className = 'crumbs'; d.setAttribute('role', 'navigation'); d.setAttribute('aria-label', "Fil d'Ariane");
     /* site où l'on est + changement de site */
     var sw = document.createElement('span'); sw.className = 'site-sw'; sw.setAttribute('role', 'group'); sw.setAttribute('aria-label', 'Changer de site');
-    sw.innerHTML = '<span class="on" aria-current="true" title="Vous êtes sur le site Club (la vie du club)"><img class="sw-ico" src="' + rel('img/picto-club.png') + '" alt="">Site Club</span><a href="https://handy.montirsportif.com/" title="Aller sur le site Handy"><img class="sw-ico" src="' + rel('img/picto-handy.png') + '" alt="">Handy</a><a href="https://pistol.montirsportif.com/" title="Aller sur le site Pistolet"><img class="sw-ico" src="' + rel('img/picto-pistolet-fftir.png') + '" alt="">Pistolet</a><a href="https://rifle.montirsportif.com/" title="Aller sur le site Carabine"><img class="sw-ico" src="' + rel('img/picto-carabine-fftir.png') + '" alt="">Carabine</a><a href="https://edt.montirsportif.com/" title="Aller sur le site École de tir"><img class="sw-ico" src="' + rel('img/fftir-ecole-de-tir.png') + '" alt="">École de tir</a><a href="https://sq.montirsportif.com/" title="Aller sur SQ (cible électronique Sport Quantum)"><img class="sw-ico" src="' + rel('img/picto-sq.png') + '" alt="">SQ</a><a href="https://thot.montirsportif.com/" title="Aller sur le site Thot"><img class="sw-ico" src="' + rel('img/picto-thot.png') + '" alt="">Thot</a><a href="https://tar.montirsportif.com/" title="Aller sur le site TAR (Tir aux Armes Réglementaires)"><img class="sw-ico" src="' + rel('img/picto-tar-fftir.png') + '" alt="">TAR</a>';
+    sw.innerHTML = '<span class="on" aria-current="true" title="Vous êtes sur le site Club (la vie du club)"><img class="sw-ico" src="' + rel('img/picto-club.png') + '" alt="">Site Club</span><a href="https://handi.montirsportif.com/" title="Aller sur le site Handi"><img class="sw-ico" src="' + rel('img/picto-handy.png') + '" alt="">Handi</a><a href="https://pistol.montirsportif.com/" title="Aller sur le site Pistolet"><img class="sw-ico" src="' + rel('img/picto-pistolet-fftir.png') + '" alt="">Pistolet</a><a href="https://rifle.montirsportif.com/" title="Aller sur le site Carabine"><img class="sw-ico" src="' + rel('img/picto-carabine-fftir.png') + '" alt="">Carabine</a><a href="https://edt.montirsportif.com/" title="Aller sur le site École de tir"><img class="sw-ico" src="' + rel('img/fftir-ecole-de-tir.png') + '" alt="">École de tir</a><a href="https://sq.montirsportif.com/" title="Aller sur SQ (cible électronique Sport Quantum)"><img class="sw-ico" src="' + rel('img/picto-sq.png') + '" alt="">SQ</a><a href="https://thot.montirsportif.com/" title="Aller sur le site Thot"><img class="sw-ico" src="' + rel('img/picto-thot.png') + '" alt="">Thot</a><a href="https://tar.montirsportif.com/" title="Aller sur le site TAR (Tir aux Armes Réglementaires)"><img class="sw-ico" src="' + rel('img/picto-tar-fftir.png') + '" alt="">TAR</a>';
     d.appendChild(sw);
     var s0 = document.createElement('span'); s0.className = 'sep'; s0.textContent = '›'; d.appendChild(s0);
     chain.forEach(function (c, i) {
@@ -124,7 +124,7 @@
     add(rel('c-est-nouveau.html'), ico('star') + "C'est nouveau");
     add(rel('plan-du-site.html'), ico('map') + 'Plan du site');
     h('Aussi chez MonTirSportif');
-    [['https://pistol.montirsportif.com/', 'Le site Pistolet ↗'], ['https://rifle.montirsportif.com/', 'Le site Carabine ↗'], ['https://edt.montirsportif.com/', 'Le site École de tir ↗'], ['https://sq.montirsportif.com/', 'SQ ↗'], ['https://thot.montirsportif.com/', 'Le site Thot ↗'], ['https://tar.montirsportif.com/', 'Le site TAR ↗'], ['https://handy.montirsportif.com/', 'Le site Handy ↗']].forEach(function (x) { var l = add(x[0], x[1]); l.target = '_blank'; l.rel = 'noopener'; });
+    [['https://pistol.montirsportif.com/', 'Le site Pistolet ↗'], ['https://rifle.montirsportif.com/', 'Le site Carabine ↗'], ['https://edt.montirsportif.com/', 'Le site École de tir ↗'], ['https://sq.montirsportif.com/', 'SQ ↗'], ['https://thot.montirsportif.com/', 'Le site Thot ↗'], ['https://tar.montirsportif.com/', 'Le site TAR ↗'], ['https://handi.montirsportif.com/', 'Le site Handi ↗']].forEach(function (x) { var l = add(x[0], x[1]); l.target = '_blank'; l.rel = 'noopener'; });
     document.body.appendChild(m);
 
     function place() { var r = document.querySelector('header').getBoundingClientRect(); m.style.top = Math.max(0, r.bottom) + 'px'; }
@@ -238,7 +238,7 @@
     ['edt', 'École de tir', 'Les jeunes de 7 à 14 ans', 'fftir-ecole-de-tir.png'],
     ['sq', 'SQ', 'Cible électronique Sport Quantum', 'picto-sq.png'],
     ['tar', 'TAR', 'Tir aux armes réglementaires', 'picto-tar-fftir.png'],
-    ['handy', 'Handy', 'Handi-tir et para-tir', 'picto-handy.png'],
+    ['handi', 'Handi', 'Handi-tir et para-tir', 'picto-handy.png'],
     ['club', 'Club', 'La vie du club', 'picto-club.png'],
     ['thot', 'Thot', 'Le dieu égyptien de l’écriture', 'picto-thot.png']
   ];
@@ -266,7 +266,7 @@
     for (var i = 0; i < S.length; i++) if (S[i][0] === h) return S[i][0];
     var t = (sw.querySelector('.on') || sw).textContent || '';
     for (var j = 0; j < S.length; j++) if (t.indexOf(S[j][1]) >= 0) return S[j][0];
-    var m = location.pathname.match(/\/(pistol|rifle|edt|sq|thot|tar|handy|club)\//); return m ? m[1] : 'pistol';
+    var m = location.pathname.match(/\/(pistol|rifle|edt|sq|thot|tar|handi|club)\//); return m ? m[1] : 'pistol';
   }
   function build() {
     var sw = document.querySelector('.crumbs .site-sw');
